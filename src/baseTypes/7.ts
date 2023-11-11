@@ -4,9 +4,18 @@
 */
 
 enum Day {
-  WorkDay = 
+    Mon = 'Weekdays',
+    Tue = 'Weekdays',
+    Wed = 'Weekdays',
+    Thu = 'Weekdays',
+    Fri = 'Weekdays', 
+    Sat = 'Weekend',
+    Sun = 'Weekend',
 }
 
-consr isWeekend = (): boolean {
-  
+
+const isWeekend = (day: Day): void => {
+    console.log(day === 'Weekend' ? true : false)
 }
+
+isWeekend(Day.Sun)
